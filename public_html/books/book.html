@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html >
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>LiberoDenken.com</title>
+
+
+
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<style>
+.b1
+{
+	width:100%;
+	height:1500px;
+	}
+.SEARCH_B
+{
+}
+	
+	
+</style>
+
+<!--apply of java script-->
+
+
+<script type="text/javascript">
+     function search(key){
+      document.getElementById("search").action="get1.php?search="+key+"&id=books";
+	 }
+  </script></head>
+  
+<body leftmargin="0" rightmargin="0" topmargin="0" bottommargin="0">
+
+
+
+
+<div class="b1">
+
+<div align="center" >
+<form  action="get1.php?search=&id=books" method="post">
+    <input type="text" name="search_text" id="search_b" value="" style="width: 300px; background:#CECECE;"/>
+    <input type="submit" name="search_box" value="Search books " onclick="search(document.getElementById('search_b').value);">
+</form>
+<?php
+
+
+ 
+  mysql_connect('localhost','root','');
+ $con = mysql_select_db('test');
+ $str = "SELECT * FROM pdf";
+ $rs = mysql_query($str);
+ $ur="";
+ $shots="";
+ $pd="pd";
+// if($_GET['id'] == '1'){
+   while($row = mysql_fetch_array($rs)){
+	    $shots=$row['shots'];
+	   
+echo "\n<embed  width=\"400 \"  height=\"500\" src=\"images\\".$shots."\" ></embed>\n</br>\n";
+        
+	   }
+
+
+
+
+?>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+		  
+
+<!-- footer -->
+<footer>
+  <div class="footer"> 
+       <div class="menu2">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#">Mobile</a></li>
+          <li><a href="portfolio.html">Complaints</a></li>
+          <li><a href="portfolio.html">References</a></li>
+          <li><a href="portfolio.html">Books</a></li>
+         <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+     <div class="menu" align="center">
+      <p>Kendo UI framework is developed by Telerik - a leading provider of UI 			components for web, desktop and mobile applications. Trusted by over 100,000 customers worldwide for our devotion to quality and industry-best technical support, Telerik helps professionals maximize their productivity and "deliver more than expcted" every day.8 
+</p>
+    </div>
+
+      
+    <div class="network_icons" align="right">
+    	<ul>
+          <li><img src="image1/facebook-icon.png"  width="30" height="30" border="0" /></li>
+          <li> <img src="image1/google-plus-icon.png" width="30" height="30" border="0" /></li>
+          <li> <img src="image1/twitter-icon.png" width="30" height="30" border="0" /></li>
+          <li> <img src="image1/tumblr-icon.png" width="30" height="30" border="0" /></li>
+        </ul>
+    </div>
+    
+    <div class="search">
+      	<ul>
+      		<li><input type="text" value="" name="search_text" id="subscribe"/></li>
+            <li><input type="button" value="SUBSCRIBE" name="loginbutton" id="button"/></li>
+        	
+        </ul>
+      </div>
+  <div class="paragraph" align="left">
+        <h4>Private Policy</h4> 
+        <br />
+      	<h5>Copyright(c) 2011-2013 LeberoDenken.com All right reserved</h5>
+   </div>
+   <h4>&nbsp;</h4>
+   
+  </div>
+  
+</footer>
+ 
+
+ 
+</body>
+</html>

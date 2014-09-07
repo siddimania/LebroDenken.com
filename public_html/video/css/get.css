@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* CSS Document */
+
+header{
+    margin-top:0px; 
+}
+div#center{
+    width:100%;
+    
+}
+div#sidebar{
+ width:100px;
+ margin-right:0px; 
+ margin-top:0px;
+ float:right;
+}
+
+div#total{
+	width:86.15%;
+	height:100%;	
+        box-shadow:#cccccc;
+}
+
+div#start{
+	margin-left:0px;	
+	float:left;
+        margin-right: 100px;
+        background:#cccccc;
+        margin-top:0px;
+        width: 100%;
+}
+
+div#vi{
+	width:900px;
+	height:400px;
+        margin-left:0px;	
+	float:left;
+        margin-top: 50px;
+        margin-right:10px;
+}
+
+div #content{
+    width: 1000px;
+    margin: 100px;
+    float: left;
+}
+
+div #all{
+    float: left;
+    width: 100%;
+}
+
+div#download{
+    width:500px;
+    margin-top:0px;
+    margin-left:20px; 
+}
+
+div#results{
+	right:0px;
+	width:500px;
+	
+        margin-left:10px;
+        margin-top: 40px;
+}
+table#rel{
+    margin-left: 50px;
+    margin-right:0px;
+    margin-top: 30px;
+}
+
+.SEARCH{
+	alignment-baseline:mathematical;
+	background-position:bottom;
+}
+
+.search{
+	alignment-baseline:mathematical;
+	background-position:bottom;
+}
+
+div#SEARCH_P{
+	margin-left:0px;
+        margin-top:50px;
+        width:300px;
+        height:100px;
+        float:right;
+}
+
+
+form#search{
+	vertical-align:central;
+        width:800px;
+        height:50px;
+}
+
+input#search_t{
+    height:50px;
+    width:500px;
+}
+
+input{
+ height:50px;
+ width:100px;
+}
+div.footer{
+    bottom:0px;
+    width:100%;
+    float:bottom;
+}

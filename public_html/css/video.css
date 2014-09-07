@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+
+#video{
+	width:500px;
+	height:500px;	
+}
+
+.SEARCH{
+	alignment-baseline:mathematical;
+	background-position:bottom;
+}
+
+.search{
+	alignment-baseline:mathematical;
+	background-position:bottom;
+}
+
+div#SEARCH_P{
+	float:inherit;
+	vertical-align:central;
+        width:500px;
+        height:100px;
+}
+
+form#search{
+	float:inherit;
+	vertical-align:central;
+        width:800px;
+        height:50px;
+}
+
+input#search_t{
+ height:50px;
+ width:500px;
+ height:inherit;
+}
+input{
+ height:50px;
+ width:100px;
+ height:inherit;
+}

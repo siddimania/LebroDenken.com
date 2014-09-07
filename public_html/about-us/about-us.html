@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>LiberoDenken.com</title>
+        
+        
+    	<script src=" https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js "></script>
+    	<script type="text/javascript" src="js/coin-slider.js"></script>
+       
+    	
+        <link rel="stylesheet" href="css/coin-slider-styles.css" type="text/css" />
+    	<link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body leftmargin="0" rightmargin="0" topmargin="0" bottommargin="0" >
+ 
+    <div class="aboutusbody" style="width: 100%;">
+                   
+        
+                <div class="head">
+                        
+                         <a href="../index.php" style ="text-decoration: none;"><h1> Our Team </h1></a>
+                        <div align="right" style="margin-right: 100px;">
+                           
+                        </div>
+                    </div>  
+
+                    <div id="mainframe" style="text-align: center;">
+                        <div id="left" >
+                            <br></br>
+                            <a href="#target1" class="panel" style="color: #F2F2F2;font-size: 25px; text-decoration:none; margin-left: 80px;  margin-top: 500px;  font:normal; font-family: 'Times New Roman', Times, serif ;">
+                                Siddhartha Dimania
+                            </a>
+                            <a href="#target2" class="panel" style="color: #F2F2F2;font-size: 25px; text-decoration:none; margin-left: 80px; font:normal; font-family: 'Times New Roman', Times, serif ;">
+                                Rajat Bothra Jain
+                            </a>
+                            <a href="#target3" class="panel" style="color: #F2F2F2;font-size: 25px; text-decoration:none; margin-left: 80px; font:normal; font-family: 'Times New Roman', Times, serif ;">
+                                Uday Sagar Khandpal
+                            </a>  
+                        </div>
+                    </div>
+        
+                    <div  align="center" style="background-color: #F2F2F2">
+                            <h1 style="font-size: 100px; margin-top: 150px;" >Libero Denken Team Members</h1>
+                            <p style="font-size: 60px;"> 11103587 (B-6)</p>
+                        </div>
+
+
+                <div id="right">
+                    <div class="panel" id="target1" >
+                        <div class="desframe" align="center" style="background-color: #F2F2F2">
+                            <h1 style="font-size: 100px; margin-top: 150px;" >Siddhartha Dimania</h1>
+                            <p style="font-size: 60px;"> 11103587 (B-6)</p>
+                        </div>
+                    </div>
+                    <div class="panel" id="target2" >
+                        <div class="desframe" align="center" style="background-color: #F2F2F2">
+                            <h1 style="font-size: 100px; margin-top: 150px;">Rajat Bothra Jain</h1>
+                            <p style="font-size: 60px;"> 11103541 (B-6)</p>
+                        </div>
+                    </div>
+                    <div class="panel" id="target3">
+                        <div class="desframe" align="center" style="background-color: #F2F2F2">
+                            <h1 style="font-size: 100px; margin-top: 150px;">Uday Sagar Kandpal</h1>
+                            <p style="font-size: 60px;"> 11103609 (B-6)</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                    <script>
+                           jQuery(function($) {
+
+                                $('a.panel').click(function() {
+                                    var $target = $($(this).attr('href')),
+                                        $other = $target.siblings('.active');
+
+                                    if (!$target.hasClass('active')) {
+                                        $other.each(function(index, self) {
+                                            var $this = $(this);
+                                            $this.removeClass('active').animate({
+                                                left: $this.width()
+                                            }, 500);
+                                        });
+
+                                        $target.addClass('active').show().css({
+                                            left: -($target.width())
+                                        }).animate({
+                                            left: 0
+                                        }, 500);
+                                    }
+                                });
+
+                            });
+
+
+                    </script>
+        
+    </div>
+   
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>LiberoDenken.com</title>
+        
+        
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    	<script type="text/javascript" src="js/coin-slider.js"></script>
+       
+    	
+        <link rel="stylesheet" href="css/coin-slider-styles.css" type="text/css" />
+    	<link href="css/style.css"rel="stylesheet" type="text/css" /></head>
+
+<body leftmargin="0" rightmargin="0" topmargin="0" bottommargin="0" >
+ 
+    <div class="head">
+        <h1> About Us </h1>
+    </div>  
+    
+    <div id="mainframe">
+<div id="left">
+    <a href="#target1" class="panel">Siddhartha Dimania</a><br/>
+    <a href="#target2" class="panel">Rajat Bothra Jain</a><br/>
+    <a href="#target3" class="panel">Uday Khandpal</a><br/>
+</div>
+</div>
+<div id="right">
+    <div class="panel" id="target1" style="background:green">Target 1</div>
+    <div class="panel" id="target2" style="background:red">Target 2</div>
+    <div class="panel" id="target3" style="background:yellow">Target 3</div>
+</div>
+    
+        
+    
+    
+    <script>
+           jQuery(function($) {
+                
+                $('a.panel').click(function() {
+                    var $target = $($(this).attr('href')),
+                        $other = $target.siblings('.active');
+
+                    if (!$target.hasClass('active')) {
+                        $other.each(function(index, self) {
+                            var $this = $(this);
+                            $this.removeClass('active').animate({
+                                left: $this.width()
+                            }, 500);
+                        });
+
+                        $target.addClass('active').show().css({
+                            left: -($target.width())
+                        }).animate({
+                            left: 0
+                        }, 500);
+                    }
+                });
+
+            });
+        
+        
+    </script>
+   
+</body>
+</html>

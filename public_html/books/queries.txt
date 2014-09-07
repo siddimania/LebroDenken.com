@@ -1,0 +1,29 @@
+PHP for Absolute Beginners 
+PHP.Cookbook.2nd.Edition.May.2009
+PHP.Solutions.Dynamic.Web.Design.Made.Easy.2nd.Edition
+
+tables:
+
+create table pdf  (id int primary key, name varchar(1000),url varchar(1000),shots varchar(1000),tags varchar(1000));
+
+insert into pdf values (1,"abc1","abc1.pdf","shot1.png","JAVA 3D PROGRAMMING");
+
+insert into pdf values (2,"abc2","abc2.pdf","shot2.png"," ROGER S PRESSMAN");
+
+
+insert into pdf values (3,"abc3","abc3.pdf","shot3.png","INTRODUCTION TO FORMAL LANGUAGES AND AUTOMATA- PETER LINZ");
+
+insert into pdf values(4,'abc4','abc4.pdf','shot4.png','PHP FOR ABSOLUTE BEGINNERS');
+
+insert into pdf values(5,'abc5','abc5.pdf','shot5.png','PHP.COOKBOOK');
+
+insert into pdf values(6,'abc6','abc6.pdf','shot6.png','PHP.DYNAMIC.WEB.DESIGN');
+
+
+insert into pdf values(7,'abc7','abc7.pdf','shot7.png','INTRODUCTION TO THEORY OF COMPUTATION');
+
+
+insert into pdf values(8,'abc8','abc8.pdf','shot8.png','INTRODUCTION TO AUTOMATA THEORY AND LANG');
+
+
+insert into pdf values(9,'abc9','abc9.pdf','shot9.png','MASTERING OPEN CV WITH COMPUTER VISION');

@@ -1,0 +1,33 @@
+#contact-form{
+    padding-top:1px;
+    height:80px; 
+    
+    background-color: #62B1F6;
+    
+}
+.head{
+    
+    padding-top:1px;
+    height:100px; 
+    background-color: #36454F;
+    
+}
+
+.head h1{
+    
+    margin-top: 33px;
+    margin-left:80px;
+    font-style: normal;
+    
+    font-weight: 300;
+    font-variant: small-caps;
+    font-family:Lucidatypewriter, monospace ;
+    color: #ffffff;
+    font-size:50px;
+   
+}
+
+#search1{
+    
+    margin-top: 0px;
+}
